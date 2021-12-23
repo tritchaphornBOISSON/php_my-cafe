@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rampart+One&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
+:root {
+    --darkgreen-color: #283618;
+    --lightgreen-color: #606c38;
+    --offwhite-color: #fefae0;
+    --darkbrown-color: #bc6c25;
+    --lightbrown-color: #dda15e;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+h1,
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+p {
+    margin: 10px 0;
+}
+img {
+    width: 100%;
+}
+.btn-outline-primary {
+    border-color: var(--darkbrown-color);
+    color: var(--darkgreen-color);
+}
+.btn-outline-primary:hover {
+    background-color: var(--darkbrown-color);
+    border-color: var(--darkbrown-color);
+}
+.container-fluid {
+    padding: 0;
+}
+.container-section {
+    padding: 4em 0em;
+}
+.brown-text {
+    color: var(--darkbrown-color);
+}
+.light-green-text {
+    color: var(--lightgreen-color);
+}
+
+/*********** Navbar *************/
+.navbar {
+    background-color:rgb(254, 250, 224, 0.5);
+    height: 100px;
+}
+.navbar a {
+    color: var(--darkgreen-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar a:hover {
+    color: var(--darkbrown-color);
+}
+.nav-item {
+    padding-right: 50px;
+}
+#logo-nav {
+    width: 75px;
+}
+#link-home::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f015";
+    padding-left: 5px;
+}
+#link-drinks::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0f4";
+    padding-left: 5px;
+}
+#link-desserts::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f810";
+    padding-left: 5px;
+}
+#link-about::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c0";
+    padding-left: 5px;
+}
+#link-contact::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0e0";
+    padding-left: 5px;
+}
+/************ Overlay ***************/
+.overlay::before {
+    position: absolute;
+    content: "";
+    background: -moz-linear-gradient(left, rgba(0, 29, 56, 0.7) 0%, rgba(26, 13, 1, 0.6) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 29, 56, 0.7) 0%, rgba(26, 13, 1, 0.6) 100%);
+    background: linear-gradient(to right, rgba(0, 29, 56, 0.7) 0%, rgba(26, 13, 1, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3001d38', endColorstr='#991a0d01',GradientType=1 );
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel-item h3 {
+    font-size: 4em;
+    color: var(--offwhite-color);
+    font-family: 'Rampart One', cursive;
+    text-transform: uppercase;
+}
+.carousel-caption {
+    top: 50%;
+}
+
+/*********** Presentation icon ************/
+.presentation {
+    text-align: center;
+}
+.presentation h2{
+    font-size: 5em;
+    color: var(--darkgreen-color);
+    margin-bottom: 50px;
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.present-icon {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -15%;
+    height: 100%;
+    width: auto;
+}
+.present-description h4 {
+    margin-top: 20px;
+}
+
+/************ Our story **********/
+.about-us-home h2 {
+    font-size: 4em;
+}
+.about-us-home span {
+    font-size: 28px;
+}
+/************ Top rated **********/
+.top-rated h2 {
+    font-size: 4em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+/************ Testimonials **********/
+.testimonials {
+    background-color: var(--lightbrown-color);
+    display: flex;
+}
+.testimonials-title {
+    border: 2px solid;
+    border-color: var(--lightgreen-color);
+    background-color: var(--lightgreen-color);
+}
+.testimonials-title h2 {
+    font-size: 4em;
+    color: var(--offwhite-color);
+    text-align: center;
+}
+.customer-text {
+    padding-left: 25px;
+}
+.customer-image {
+    padding: 30px;
+}
+/************ Chefs ************/
+#chef1 {
+    background-image: url("images/confectioner-uniform-decorates-cake.jpg");
+}
+#chef1::before {
+    content: "Olivia Santa";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--darkbrown-color);
+    color: var(--offwhite-color);
+    width: 20%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+#chef2 {
+    background-image: url("images/portrait-waiter-holding-basket-bread.jpg");
+}
+#chef2::before {
+    content: "Tommy Bran";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--darkbrown-color);
+    color: var(--offwhite-color);
+    width: 20%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+#chef3 {
+    background-image: url("images/coffee-4054333_1920.jpg");
+}
+#chef3::before {
+    content: "Cindy Jackson";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--darkbrown-color);
+    color: var(--offwhite-color);
+    width: 20%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+#chef4 {
+    background-image: url("images/coffee-2565442_1920.jpg");
+}
+#chef4::before {
+    content: "Jack Brown";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--darkbrown-color);
+    color: var(--offwhite-color);
+    width: 20%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.chefs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.chefs-section h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.all-chefs {
+    width: 20%;
+    height: 350px;
+    margin: 0 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+/************ Book table **********/
+.book-table {
+    background-image: url("images/coffee-2242213_1920.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    margin: 4em 0;
+    padding: 4em 0;
+}
+.book-table h2 {
+    color: var(--offwhite-color);
+    font-size: 4em;
+    padding-left: 50px;
+}
+.row-form {
+    padding: 0px 0px 35px 50px;
+}
+.book-button {
+    background-color: var(--darkgreen-color);
+    color: var(--offwhite-color);
+    width: 100%;
+}
+
+.contact-section {
+    margin-top: 100px;
+    background-image: url("images/coffee-2506163_1920.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+.contact-section h2 {
+    font-size: 5em;
+    position: relative;
+    top: 65%;
+    text-align: center;
+}
+.contact-form {
+    width: 60%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.contact-button {
+    width: 100%;
+    background-color: var(--darkbrown-color);
+    color: var(--offwhite-color);
+}
+
+
+
+/*********** Footer **************/
+#footer-section {
+    background-color: var(--lightgreen-color);
+
+}
+#footer-section p, #footer-section a, #footer-section h5 {
+    color: var(--offwhite-color);
+}
+#logo-footer {
+    width: 50px;
+}
+.footer-column > .col-4:first-child, .footer-column > .col-4:nth-child(2) {
+    padding-left: 60px;
+}
+.social {
+    display: flex;
+}
+.social i {
+    font-size: 2em;
+}
+.bottom-footer p {
+    font-size: 14px;
+}
+.fa-map-marker-alt:before,
+.fa-mobile-alt:before,
+.fa-envelope-open-text:before,
+.fa-github:before,
+.fa-linkedin:before {
+    padding-right: 10px;
+}
+
+
+
+
